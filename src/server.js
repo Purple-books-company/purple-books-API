@@ -1,10 +1,15 @@
 import express from 'express';
+import cors from 'cors';
+import compression from 'compression';
 
 import { api_port } from './config';
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.use(cors());
+app.use(compression());
+
+app.get('/', (req, res, next) => {
   res.send('API Running...');
 });
 
