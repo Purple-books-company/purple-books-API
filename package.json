@@ -1,0 +1,30 @@
+{
+  "name": "purple-books-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec babel-node ./src/server.js",
+    "clean": "rm -rf ./dist",
+    "build": "npm run clean && babel ./src -d dist",
+    "start": "npm run build && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Purple-books-company/purple-books-API.git"
+  },
+  "keywords": [],
+  "author": "Mugilan <mugilancodes@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Purple-books-company/purple-books-API/issues"
+  },
+  "homepage": "https://github.com/Purple-books-company/purple-books-API#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/node": "^7.12.6",
+    "@babel/preset-env": "^7.12.1",
+    "nodemon": "^2.0.6"
+  }
+}
