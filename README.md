@@ -5,8 +5,9 @@
 - Enable Logging
 - Error Handling
 - Routes
-- Decide on Database
 - Use Docker for testing
+- Postgres as Database
+- Deploying on Digital Ocean
 
 ## Running the API
 
