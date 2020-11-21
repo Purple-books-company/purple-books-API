@@ -3,11 +3,15 @@ import cors from 'cors';
 import compression from 'compression';
 
 import { api_port } from './config';
+import { logger } from './middleware';
 
 const app = express();
 
 app.use(cors());
 app.use(compression());
+app.use(express.json());
+// app.use(express.urlencoded());
+app.use(logger);
 
 app.get('/', (req, res, next) => {
   res.send('API Running...');
