@@ -9,6 +9,11 @@
 - Postgres as Database
 - Deploying on Digital Ocean
 
+## Pre-Requisites
+
+- Node
+- A Running Postgres Connection
+
 ## Running the API
 
 - Clone this repository in a folder of your choice. (use ssh if you want)
@@ -23,7 +28,7 @@
   cd purple-books-API
   ```
 
-- Create `.env` file in the root of the project.
+- Create `.env` file in the root of the project. (use `.env.example` as a template)
 
 - Install App Dependencies
 
